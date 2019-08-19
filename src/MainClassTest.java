@@ -3,12 +3,12 @@ import org.junit.Test;
 public class MainClassTest
 {
     @Test
-    public void testGetClassNumber (){
-        if (MainClass.getClassNumber() > 45) {
+    public void testGetClassString (){
+        if ((MainClass.getClassString().contains("Hello")) || (MainClass.getClassString().contains("hello"))) {
             System.out.println("Test successful!");
         }
             else    {
-                System.out.println("Class number is less that 45!");
+                System.out.println("Didn't find required sequence!");
             }
     }
 }
