@@ -133,6 +133,30 @@ public class FirstTest {
         );
     }
 
+    @Test
+    public void testFindTextInSearch()
+    {
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/search_container"),
+                "Cannot find Search Wikipedia input",
+                5
+        );
+
+        WebElement titleElement = waitForElementPresent(
+                By.id("org.wikipedia:id/search_src_text"),
+                "Cannot find article title",
+                10
+        );
+
+        String articleTitle = titleElement.getAttribute("text");
+
+        Assert.assertEquals(
+                "We see unexpected title",
+                "Search…",
+                articleTitle
+        );
+    }
+
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);

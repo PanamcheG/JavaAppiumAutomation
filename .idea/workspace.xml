@@ -14,8 +14,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="99" column="29" lean-forward="true" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
+            <state relative-caret-position="503">
+              <caret line="157" column="5" lean-forward="true" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,7 +88,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567013323611" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567013737451" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -106,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.testCompareArticleTitle">
+  <component name="RunManager" selected="JUnit.FirstTest.testFindTextInSearch">
     <configuration name="All in JavaAppiumAutomation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -134,8 +134,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FirstTest.testFindTextInSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testFindTextInSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.testFindTextInSearch" />
         <item itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
         <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.All in JavaAppiumAutomation" />
@@ -156,15 +167,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest - 2019.08.26 at 19h 54m 52s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2019.08.26 at 21h 31m 40s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2019.08.26 at 21h 33m 26s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest - 2019.08.26 at 21h 44m 04s.xml">
       <configuration name="FirstTest" configurationId="JUnit" />
     </history-entry>
@@ -185,6 +187,15 @@
     </history-entry>
     <history-entry file="FirstTest_testCompareArticleTitle - 2019.08.28 at 20h 27m 35s.xml">
       <configuration name="FirstTest.testCompareArticleTitle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testCompareArticleTitle - 2019.08.28 at 20h 29m 14s.xml">
+      <configuration name="FirstTest.testCompareArticleTitle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testFindTextInSearch - 2019.08.28 at 20h 35m 02s.xml">
+      <configuration name="FirstTest.testFindTextInSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testFindTextInSearch - 2019.08.28 at 20h 35m 31s.xml">
+      <configuration name="FirstTest.testFindTextInSearch" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -225,8 +236,8 @@
     <entry file="file://$PROJECT_DIR$/src/MainClassTest.java" />
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="99" column="29" lean-forward="true" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
+        <state relative-caret-position="503">
+          <caret line="157" column="5" lean-forward="true" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
