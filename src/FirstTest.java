@@ -157,6 +157,53 @@ public class FirstTest {
         );
     }
 
+    @Test
+    public void testMakeSearchAndKillSearch()
+    {
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/search_container"),
+                "Cannot find Search Wikipedia input",
+                5
+        );
+
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                "Java",
+                "Cannot find search input",
+                5
+        );
+
+        waitForElementPresent(
+                By.xpath("//*[contains(@text, 'Island of Indonesia')]"),
+                "Could not find 1st article",
+                10
+        );
+
+        waitForElementPresent(
+                By.xpath("//*[contains(@text, 'Programming language')]"),
+                "Could not find 2nd article",
+                5
+        );
+
+        waitForElementPresent(
+                By.xpath("//*[contains(@text, 'Object-oriented programming language')]"),
+                "Could not find 3rd article",
+                5
+        );
+
+        waitForElementAndClear(
+                By.id("org.wikipedia:id/search_src_text"),
+                "Cannot clear search input",
+                5
+        );
+
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/search_close_btn"),
+                "Cannot find X to cancel search",
+                5
+        );
+    }
+
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
