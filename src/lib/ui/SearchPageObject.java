@@ -63,7 +63,7 @@ public class SearchPageObject extends MainPageObject {
         this.waitForElementAndClick(By.xpath(search_result_xpath), "Cannot find and click search result with substring " + substring, 10);
     }
 
-    public int getAmountOfFounedArticles()
+    public int getAmountOfFoundArticles()
     {
         this.waitForElementPresent(
                 By.xpath(SEARCH_RESULT_ELEMENT),

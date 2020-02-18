@@ -78,6 +78,33 @@ public class ArticlePageObject extends MainPageObject
         );
     }
 
+    public void addAnotherArticleToMyList(String name_of_folder)
+    {
+        this.waitForElementAndClick(
+                By.xpath(OPTIONS_BUTTON),
+                "Cannot find button to open article options",
+                5
+        );
+
+        this.waitForElementAndClick(
+                By.xpath(OPTIONS_ADD_TO_MY_LIST_BUTTON),
+                "Cannot find option to add article to reading list",
+                5
+        );
+
+        this.waitForElementPresent(
+                By.xpath("//android.widget.TextView[@text = '" + name_of_folder + "']"),
+                "Cannot find an  saved article folder in list",
+                5
+        );
+
+        this.waitForElementAndClick(
+                By.xpath("//android.widget.TextView[@text = '" + name_of_folder + "']"),
+                "Cannot find option to add article to reading list",
+                10
+        );
+    }
+
     public void closeArticle()
     {
         this.waitForElementAndClick(

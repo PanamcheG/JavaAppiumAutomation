@@ -29,53 +29,6 @@ public class FirstTest extends CoreTestCase {
     }
 
     @Test
-    public void testMakeSearchAndKillSearch()
-    {
-        MainPageObject.waitForElementAndClick(
-                By.id("org.wikipedia:id/search_container"),
-                "Cannot find Search Wikipedia input",
-                5
-        );
-
-        MainPageObject.waitForElementAndSendKeys(
-                By.xpath("//*[contains(@text, 'Search…')]"),
-                "Java",
-                "Cannot find search input",
-                5
-        );
-
-        MainPageObject.waitForElementPresent(
-                By.xpath("//*[contains(@text, 'Island of Indonesia')]"),
-                "Could not find 1st article",
-                10
-        );
-
-        MainPageObject.waitForElementPresent(
-                By.xpath("//*[contains(@text, 'Programming language')]"),
-                "Could not find 2nd article",
-                5
-        );
-
-        MainPageObject.waitForElementPresent(
-                By.xpath("//*[contains(@text, 'Object-oriented programming language')]"),
-                "Could not find 3rd article",
-                5
-        );
-
-        MainPageObject.waitForElementAndClear(
-                By.id("org.wikipedia:id/search_src_text"),
-                "Cannot clear search input",
-                5
-        );
-
-        MainPageObject.waitForElementAndClick(
-                By.id("org.wikipedia:id/search_close_btn"),
-                "Cannot find X to cancel search",
-                5
-        );
-    }
-
-    @Test
     public void testCompareArticlesWithSearch()
     {
         MainPageObject.waitForElementAndClick(

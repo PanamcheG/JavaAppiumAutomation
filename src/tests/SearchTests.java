@@ -35,7 +35,7 @@ public class SearchTests extends CoreTestCase
         SearchPageObject.initSearchInput();
         String search_line = "Linkin Park Discography";
         SearchPageObject.typeSearchLine(search_line);
-        int amount_of_search_results = SearchPageObject.getAmountOfFounedArticles();
+        int amount_of_search_results = SearchPageObject.getAmountOfFoundArticles();
 
         assertTrue(
                 "We found too few results!",
@@ -52,5 +52,19 @@ public class SearchTests extends CoreTestCase
         SearchPageObject.typeSearchLine(search_line);
         SearchPageObject.waitForEmptyResultsLabel();
         SearchPageObject.assertThereIsNoResultOfSearch();
+    }
+
+    @Test
+    public void testExerciseThree()
+    {
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+
+        SearchPageObject.initSearchInput();
+        SearchPageObject.typeSearchLine("Java");
+        SearchPageObject.waitForSearchResult("Island of Indonesia");
+        SearchPageObject.waitForSearchResult("Programming language");
+        SearchPageObject.waitForSearchResult("Object-oriented programming language");
+        SearchPageObject.clickCancelSearch();
+        SearchPageObject.clickCancelSearch();
     }
 }
